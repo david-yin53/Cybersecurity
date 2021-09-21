@@ -4,9 +4,14 @@ The files in this repository were used to configure the network depicted below.
 
 [Network Diagram](Diagrams/Network%20Diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook may be used to install only certain pieces of it, such as Filebeat, with some editing. The playbook has been created using the roles directory structure.
 
-  - [ELK Stack Deployment](Ansible/main.yml)
+  - [ELK Stack Deployment main playbook](Ansible/main.yml)
+  - Roles
+    - [Install DVWA Container](Ansible/roles/installdvwa/tasks)
+    - [Install ELK](Ansible/roles/installelk/tasks)
+    - [Install Filebeat](Ansible/roles/installfilebeat)
+    - [Install Metricbeat](Ansible/roles/installdvwa)
 
 This document contains the following details:
 - Description of the Topology
