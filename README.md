@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](~/Documents/UT\ Cyber\ BC/Cybersecurity/Diagrams/Network\ Diagram.png)
+[Network Diagram](Diagrams/Network%20Diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook may be used to install only certain pieces of it, such as Filebeat.
 
-  - ![ELK Stack Deployment](~/Documents/UT\ Cyber\ BC/Cybersecurity/Ansible)
+  - [ELK Stack Deployment](Ansible/main.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -26,7 +26,6 @@ Load balancing ensures that the application will be highly available, in additio
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system metrics.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name                 | Function   | IP Address     | Operating System |
 |----------------------|------------|----------------|------------------|
@@ -34,6 +33,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web 1                | Web server | 40.83.216.21   | Linux Ubuntu     |
 | Web 2                | Web server | 40.83.216.21   | Linux Ubuntu     |
 | ELK-Stack            | ELK server | 104.43.205.231 | Linux Ubuntu     |
+
 
 ### Access Policies
 
@@ -66,14 +66,14 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![ELK Container Displayed](~/Documents/UT\ Cyber\ BC/Cybersecurity/Images/ELK\ Installation-\ ELK\ Container\ Screenshot.jpg)
+[ELK Container Displayed](Images/ELK%20Installation-%20ELK%20Container%20Screenshot.jpg)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - Web 1 & Web 2
 
 We have installed the following Beats on these machines:
-- Web 1 & Web 2: Filebeat and Metricbeat
+- Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat: collects data about the file system. Generates and oranizes log files
